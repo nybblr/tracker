@@ -4,4 +4,6 @@
 #= require lib/batman
 #= require lib/batman.jquery
 #
+#= require batman/app
+#
 #= require_self
