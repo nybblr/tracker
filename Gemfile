@@ -9,4 +9,5 @@ gem "middleman-livereload", "~> 3.1.0"
 
 gem "slim"
 gem "bourbon"
+gem "zurb-foundation"
 
