@@ -1,0 +1,31 @@
+h1 All sightings
+
+table
+  thead
+    th Title
+    th Body
+    th Tags
+    th Published
+    th Published on
+    th
+    th
+    th
+
+  tbody
+    tr data-foreach-sighting="sightings"
+      td data-bind="sighting.title"
+      td data-bind="sighting.body"
+      td data-bind="sighting.tags"
+      td data-bind="sighting.published"
+      td data-bind="sighting.published_on"
+      td
+        a data-route="routes.sightings[sighting]" Show
+      td
+        a data-route="routes.sightings[sighting].edit" Edit
+      td
+        a data-event-click="destroy" Destroy
+
+br
+
+a data-route="routes.sightings.new" New sighting
+

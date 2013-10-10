@@ -4,5 +4,5 @@ class Tracker.Sighting extends Batman.Model
 
   @persist Batman.LocalStorage
 
-  @encode 'title', 'body', 'tags', 'published', 'published_on'
+  @encode 'type', 'date', 'location', 'witnesses', 'name'
 

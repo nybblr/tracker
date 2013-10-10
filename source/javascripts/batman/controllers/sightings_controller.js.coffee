@@ -6,6 +6,7 @@ class Tracker.SightingsController extends Batman.Controller
       throw err if err
 
       @set 'sightings', Tracker.Sighting.get('loaded')
+
   show: (params) ->
     Tracker.Sighting.find parseInt(params.id, 10), (err, record) =>
       throw err if err
