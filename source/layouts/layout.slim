@@ -11,22 +11,15 @@ html lang="en"
   body class=page_classes
     .contain-to-grid
       nav.top-bar
-        ul
-          li.name
-            h1
-              a
-                ' Tracker
         section
+          ul.left
+            li.name
+              h1
+                a
+                  ' Tracker
           ul.right
             li
-              a.button href="/" All sightings
-            li.divider
-            li
-              a href="/posts" Report a sighting
-            li.divider
-            li
-              a href="https://github.com/nybblr" Take over the world
-    /= partial 'layouts/navbar'
+              a.button href="/posts" Report a sighting
 
     article
       .row
