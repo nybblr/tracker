@@ -9,6 +9,25 @@ html lang="en"
     = javascript_include_tag "all"
 
   body class=page_classes
+    .contain-to-grid
+      nav.top-bar
+        ul
+          li.name
+            h1
+              a
+                ' Tracker
+        section
+          ul.right
+            li
+              a.button href="/" All sightings
+            li.divider
+            li
+              a href="/posts" Report a sighting
+            li.divider
+            li
+              a href="https://github.com/nybblr" Take over the world
+    /= partial 'layouts/navbar'
+
     article
       .row
         .large-3.columns
@@ -16,12 +35,6 @@ html lang="en"
             img src="http://placehold.it/400x100&text=Tracker"
         .large-9.columns
           ul.inline-list.right
-            li
-              a href="/" All sightings
-            li
-              a href="/posts" Report a sighting
-            li
-              a href="https://github.com/nybblr" Take over the world
       .row
         .large-12.columns
           h3
