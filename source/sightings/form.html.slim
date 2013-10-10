@@ -5,13 +5,16 @@ layout: false
 .field
   input.string type="text" placeholder="Type of sighting" data-bind="sighting.type"
 .field
+  select.select name="type" data-bind="sighting.type"
+    option class="radio inline" data-bind="type" data-foreach-type="controllers.sightings.types"
+.field
   input.string type="text" placeholder="Location of sighting" data-bind="sighting.location"
 .field
   input.datetime type="date" placeholder="Creature sighted on" data-bind="sighting.date"
 .field
   textarea.text placeholder="Witnesses to the sighting" data-bind="sighting.witnesses"
 .field
-  input.string type="text" placeholder="Creature name" data-bind="sighting.name"
+  input.string.inline type="text" placeholder="Creature name" data-bind="sighting.name"
 .actions
-  input.button type="submit" value="Save"
-
+  input.button.small.success type="submit" value="Save"
+  a.button.small.secondary data-route="routes.sightings" Cancel

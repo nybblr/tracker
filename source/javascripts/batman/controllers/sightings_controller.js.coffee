@@ -2,6 +2,7 @@ class Tracker.SightingsController extends Batman.Controller
   routingKey: 'sightings'
 
   index: (params) ->
+    @set 'types', ["Horrid", "Ghastly", "Benine"]
     Tracker.Sighting.load (err, results) =>
       throw err if err
 
