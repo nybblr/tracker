@@ -1,11 +1,13 @@
 .contain-to-grid
   nav.top-bar
-    section
-      ul.left
+    section.button-bar
+      ul.left.button-group
         li.name
           h1
             a href="/"
               ' Tracker
-      ul.right
+      ul.right.button-group
         li
-          a.button data-route="routes.sightings.new" Report a sighting
+          a.button.secondary data-route="routes.sightings" All sightings
+        li
+          a.button.alert data-route="routes.sightings.new" Report a sighting

@@ -1,3 +1,34 @@
 ---
 layout: false
 ---
+
+h1
+  span' data-bind="sighting.name"
+  small
+    ' Seen at
+    span data-bind="sighting.location"
+
+.row
+  .small-8.columns
+    p
+      ' Beware the
+      strong' data-bind="sighting.type | append ' ' | append sighting.name"
+      ' of
+      em' data-bind="sighting.location | append '.'"
+
+    p
+      ' It is unlikely an encounter with this fiece cryptologic will end well, as
+      em' data-bind="sighting.witnesses"
+      ' witnessed the beast and reported their utter horror.
+
+    p
+      ' This beast was last seen on
+      strong' data-bind="sighting.date | append '.'"
+
+    p
+      ' Have you seen the
+      strong' data-bind="sighting.name | append '?'"
+      a.button.success.tiny data-route="routes.sightings.new" Report a sighting
+
+  .small-4.columns
+    img data-bind-src="'http://placehold.it/400x600&text=' | append sighting.type | append ' ' | append sighting.name"
