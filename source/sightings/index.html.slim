@@ -1,23 +1,27 @@
+---
+layout: false
+---
+
 h1 All sightings
 
 table
   thead
-    th Title
-    th Body
-    th Tags
-    th Published
-    th Published on
+    th Type
+    th Date
+    th Location
+    th Witnesses
+    th Name
     th
     th
     th
 
   tbody
     tr data-foreach-sighting="sightings"
-      td data-bind="sighting.title"
-      td data-bind="sighting.body"
-      td data-bind="sighting.tags"
-      td data-bind="sighting.published"
-      td data-bind="sighting.published_on"
+      td data-bind="sighting.type"
+      td data-bind="sighting.date"
+      td data-bind="sighting.location"
+      td data-bind="sighting.witnesses"
+      td data-bind="sighting.name"
       td
         a data-route="routes.sightings[sighting]" Show
       td

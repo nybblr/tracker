@@ -9,17 +9,7 @@ html lang="en"
     = javascript_include_tag "all"
 
   body class=page_classes
-    .contain-to-grid
-      nav.top-bar
-        section
-          ul.left
-            li.name
-              h1
-                a
-                  ' Tracker
-          ul.right
-            li
-              a.button href="/posts" Report a sighting
+    = partial "layouts/navbar"
 
     article
       .row
@@ -33,7 +23,7 @@ html lang="en"
           h3
             ' Tracker
             small Snappy subtitle
-            div data-yield="main" = yield
+            div data-yield="main"
       footer.row
         .large-12.columns
           hr

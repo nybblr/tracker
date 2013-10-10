@@ -1,0 +1,17 @@
+---
+layout: false
+---
+
+.field
+  input.string type="text" placeholder="Type of sighting" data-bind="sighting.type"
+.field
+  input.string type="text" placeholder="Location of sighting" data-bind="sighting.location"
+.field
+  input.datetime type="date" placeholder="Creature sighted on" data-bind="sighting.date"
+.field
+  textarea.text placeholder="Witnesses to the sighting" data-bind="sighting.witnesses"
+.field
+  input.string type="text" placeholder="Creature name" data-bind="sighting.name"
+.actions
+  input.button type="submit" value="Save"
+
